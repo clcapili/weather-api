@@ -1,0 +1,147 @@
+// Variables
+//
+// Color system
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #343d4b !default;
+$black:    #222831 !default;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       #5151E5;
+$secondary:     #72EDF2;
+$success:       #55EFC4;
+$info:          #F0F1F7;
+$warning:       #FFEAA7;
+$danger:        #D63031;
+$light:         $white;
+$dark:          $black;
+// scss-docs-end theme-color-variables
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $gray-100 !default;
+$body-color:                $white;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                $primary !default;
+$link-decoration:           none;
+
+// Spacers
+$spacers: (
+  0: 0,
+  1: 10px,
+  2: 20px,
+  3: 30px,
+  4: 40px,
+  5: 50px,
+  6: 60px,
+  7: 70px,
+  8: 80px,
+  9: 90px,
+  10: 100px,
+  11: 110px,
+  12: 120px,
+  13: 130px,
+  14: 140px,
+  15: 150px,
+  16: 160px,
+  17: 170px,
+  18: 180px,
+  19: 190px,
+  20: 200px,
+  21: 210px,
+  22: 220px,
+  23: 230px,
+  24: 240px,
+  25: 250px,
+  26: 260px,
+  27: 270px,
+  28: 280px,
+  29: 290px,
+  30: 300px,
+);
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+$font-family-sans-serif:      'DM Sans', sans-serif;
+$font-size-base:              1.125rem;
+
+$line-height-base:            2 !default;
+
+$h1-font-size:                3.5rem; // 96px
+$h2-font-size:                3rem; // 64px
+$h3-font-size:                2.5rem; // 48px
+$h4-font-size:                2rem; // 32px
+$h5-font-size:                1.5rem; // 24px
+
+$font-sizes: (
+  1: 2.5rem, // 40px
+  2: 2rem, // 32px
+  3: 1.5rem, // 24px
+  4: 1.125rem, // 18px
+  5: 0.875rem, // 14px
+  6: 0.75rem // 12px
+);
+// scss-docs-end font-variables
+
+// scss-docs-start type-variables
+$lead-font-size:              1.5rem;
+$lead-font-weight:            400;
+
+$small-font-size:             0.875rem;
+// scss-docs-end type-variables
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 7rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+) !default;
+
+$display-font-weight: 700 !default;
+// scss-docs-end display-headings
+
+// scss-docs-start headings-variables
+$headings-margin-bottom:      16px;
+$headings-font-weight:        700 !default;
+// scss-docs-end headings-variables
+
+$prefix:                      bs- !default;
+
+// scss-docs-start border-variables
+$border-radius:               15px !default;
+// scss-docs-end border-variables
+
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0 .125rem 1rem rgba(38, 50, 56, .16) !default;
+// scss-docs-end box-shadow-variables
+
+// scss-docs-start form-select-variables
+$form-select-padding-y:             .8rem !default;
+$form-select-padding-x:             2rem !default;
+// scss-docs-end form-select-variables
+
+// Components
+
+// Cards
+// scss-docs-start card-variables
+$card-spacer-y:                     2rem !default;
+$card-spacer-x:                     2rem !default;
+$card-border-width:                 0 !default;
+$card-border-radius:                $border-radius !default;
+
+$card-bg:                           transparent !default;
+// scss-docs-end card-variables

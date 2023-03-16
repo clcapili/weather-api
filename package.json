@@ -1,0 +1,22 @@
+{
+  "name": "inm420sbb_restapi_charlenecapili",
+  "version": "1.0.0",
+  "description": "This is my RestAPI Project in INM420SBB Class.",
+  "main": "index.js",
+  "scripts": {
+    "base": "lite-server --baseDir=\"public\"",
+    "css": "sass --watch src/main.scss public/assets/css/uikit.min.css --style compressed",
+    "start": "concurrently \"npm run base\" \"npm run css\""
+  },
+  "keywords": [],
+  "author": "Charlene Capili",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

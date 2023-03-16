@@ -1,0 +1,92 @@
+// custom styles here
+main {
+    padding: 60px 0;
+    
+    @media (min-width: 768px) {
+        padding: 0;
+        height: 100vh;
+    }
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+    @media (min-width: 768px) {
+        width: 640px;
+        height: 100vh;
+    }
+
+    .current-weather {
+        .weather-info {
+            height: 100%;
+            -webkit-box-shadow: 0 0 20px -10px rgb(0 0 0 / 20%);
+            box-shadow: 0 0 20px -10px rgb(0 0 0 / 20%);
+            -webkit-transition: -webkit-transform 300ms ease;
+            transition: -webkit-transform 300ms ease;
+            -o-transition: transform 300ms ease;
+            transition: transform 300ms ease;
+            transition: transform 300ms ease, -webkit-transform 300ms ease;
+
+            &:hover {
+                -webkit-transform: scale(1.05) perspective(1500px) rotateY(10deg);
+                transform: scale(1.05) perspective(1500px) rotateY(10deg);
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .manila {
+        background-image: linear-gradient(to bottom, rgba(114, 238, 242, 0.5), rgba(81, 81, 229, 0.7)), url('/assets/img/manila.jpg');
+    }
+
+    .toronto {
+        background-image: linear-gradient(to bottom, rgba(114, 238, 242, 0.5), rgba(81, 81, 229, 0.7)), url('/assets/img/toronto.jpg');
+    }
+
+    .vancouver {
+        background-image: linear-gradient(to bottom, rgba(114, 238, 242, 0.5), rgba(81, 81, 229, 0.7)), url('/assets/img/vancouver.jpg');
+    }
+
+    .calgary {
+        background-image: linear-gradient(to bottom, rgba(114, 238, 242, 0.5), rgba(81, 81, 229, 0.7)), url('/assets/img/calgary.jpg');
+    }
+
+    .ottawa {
+        background-image: linear-gradient(to bottom, rgba(114, 238, 242, 0.5), rgba(81, 81, 229, 0.7)), url('/assets/img/ottawa.jpg');
+    }
+
+    .weather-details {
+        background-color: $black;
+        height: 100%;
+
+        .detail {
+            color: $white;
+            padding: 10px 15px 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 50px -5px rgb(0 0 0 / 25%);
+            height: 100%;
+            cursor: pointer;
+            -webkit-transition: 200ms ease;
+            -o-transition: 200ms ease;
+            transition: 200ms ease;
+
+            &:hover {
+                background-color: $white;
+                color: $black;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                -webkit-box-shadow: 0 0 40px -5px rgb(0 0 0 / 20%);
+                box-shadow: 0 0 40px -5px rgb(0 0 0 / 20%);
+            }
+        }
+    }
+}

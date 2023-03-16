@@ -1,0 +1,21 @@
+// type styles here
+h1 {
+    font-weight: 800;
+}
+h2 {
+    font-weight: 900;
+}
+
+.lead {
+    line-height: 2.25rem;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+@each $color, $value in $grays {
+    .gray-#{$color} {
+        color: $value !important;
+    }
+}
